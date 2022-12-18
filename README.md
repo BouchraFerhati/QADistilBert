@@ -7,6 +7,10 @@ Aplikasi QA-UP2U merupakan aplikasi question answering yang dapat membantu menja
 
 ## Cara Menjalankan Aplikasi
 
+![image_2022-12-15_13-55-28](https://user-images.githubusercontent.com/95232955/208300286-4b0a1df1-0f5c-4a9c-a3d5-031474d6541d.png)
+
+
+
 
 ## Available Scripts
 
