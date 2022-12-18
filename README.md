@@ -1,8 +1,8 @@
 # Question Answering
 
-## Deskripsi Aplikasi
+## Deskripsi Aplikasi [QA-U2U]
 
-Aplikasi yang dibuat yaitu aplikasi question answering yang dapat membantu menjawab pertanyaan yang ada pada teks yang telah diinputkan. 
+Aplikasi QA-UP2U merupakan aplikasi question answering yang dapat membantu menjawab pertanyaan yang ada pada teks yang telah diinputkan. Aplikasi ini dibangun menggunakan model Deep Learning Distill Bert. 
 
 ## Available Scripts
 
