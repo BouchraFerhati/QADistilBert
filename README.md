@@ -4,6 +4,10 @@
 
 Aplikasi QA-UP2U merupakan aplikasi question answering yang dapat membantu menjawab pertanyaan yang ada pada teks yang telah diinputkan. Aplikasi ini dibangun menggunakan model Deep Learning Distill Bert. 
 
+
+## Cara Menjalankan Aplikasi
+
+
 ## Available Scripts
 
 In the project directory, you can run:
