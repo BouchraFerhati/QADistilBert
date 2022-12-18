@@ -6,6 +6,11 @@ Aplikasi QA-U2U merupakan aplikasi question answering yang dapat membantu menjaw
 
 
 ## Cara Menjalankan Aplikasi
+Berikut langkah-langkah untuk menjalankan aplikasi: 
+
+1. Unduh file python model.py
+2. Install library yang diperlukan
+3. Run source code dengan command streamlit run model.py
 
 ![image_2022-12-15_13-55-28](https://user-images.githubusercontent.com/95232955/208300286-4b0a1df1-0f5c-4a9c-a3d5-031474d6541d.png)
 
