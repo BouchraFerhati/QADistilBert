@@ -66,3 +66,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deskripsi Aplikasi
+
+Aplikasi yang dibuat yaitu aplikasi question answering yang dapat membantu menjawab pertanyaan yang ada pada teks yang telah diinputkan. 
+
