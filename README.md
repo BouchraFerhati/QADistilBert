@@ -15,3 +15,25 @@ Berikut langkah-langkah untuk menjalankan aplikasi:
 ![image_2022-12-15_13-55-28](https://user-images.githubusercontent.com/95232955/208300286-4b0a1df1-0f5c-4a9c-a3d5-031474d6541d.png)
 
 Gambar di atas merupakan tampilan aplikasi QA-U2U. Untuk menjalankannya, pertama kali user harus menginputkan context ataupun article yang digunakan sebagai sumber jawaban dari pertanyaan yang akan diajukan. Setelah itu user menginputkan pertanyaan yang akan diajukan. Lalu klik tombol "Answer", maka aplikasi akan otomatis memberikan jawaban dari pertanyaan sesuai dengan context ataupun article yang diinputkan.
+
+
+## Proses
+
+
+### Dataset
+
+
+### Algoritma Distill Bert
+
+
+### Preprocessing
+
+
+### Training
+
+Setelah data siap untuk ditraining, kita dapat mengunduh model pre-trained dan mengaplikasiakan fine-tune pada model tersebut. Untuk training digunakan class Trainer dari transformers dan ntuk menginstansiasi Trainer, kita perlu mendefinisikan tiga hal lagi, yaitu yang terpenting adalah TrainingArguments, yaitu kelas yang berisi semua atribut untuk menyesuaikan pelatihan. Ini membutuhkan satu nama folder, yang akan digunakan untuk menyimpan pos pemeriksaan model.
+Selain itu disini juga kita menetapkan evaluasi akan dilakukan di akhir setiap epoch, menetapkan learning rate, penggunaan batch size yg sudah ditentukan, dan penentuan jumlah epoch. Setelah itu kita membutuhkan data colattor yang akan menggabungkan sampel yang sudah diproses, dan proses training dapat dimulai.
+
+![image](https://user-images.githubusercontent.com/74850037/208308273-0ea68924-6bf6-4463-afb9-afa0bbe1ce20.png)
+
+### Evaluasi
