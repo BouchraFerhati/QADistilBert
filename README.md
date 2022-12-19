@@ -2,7 +2,7 @@
 
 ## Deskripsi Aplikasi [QA-U2U]
 
-Aplikasi QA-U2U merupakan aplikasi question answering yang dapat membantu menjawab pertanyaan yang ada pada teks yang telah diinputkan. Aplikasi ini dibangun menggunakan model Machine Learning Distill Bert. 
+Aplikasi QA-U2U merupakan aplikasi question answering.  Aplikasi QA-U2U adalah aplikasi yang memungkinkan  pengguna untuk mendapatkan jawaban dari pertanyaan yang diajukan mengenai teks yang telah diinputkan. Jadi ketika menginputkan pertanyaan yang tidak ada pada context, maka aplikasi akan memberikan jawaban random sesuai dengan context yang diberikan. 
 
 
 ## Cara Menjalankan Aplikasi
