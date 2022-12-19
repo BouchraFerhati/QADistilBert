@@ -49,7 +49,7 @@ Selain itu disini juga kita menetapkan evaluasi akan dilakukan di akhir setiap e
 
 
 ### Testing
-Pada proses testing digunakan untuk mengetes model yang sebelumnya sudah di training. Pada aplikasi ini untuk testing menggunakan validation sets yang diambil menggunakan fungsi load_dataset. 
+Pada proses testing digunakan untuk mengetes model yang sebelumnya sudah di training. Pada aplikasi ini untuk testing menggunakan validation sets yang diambil menggunakan fungsi `load_dataset`. 
 
 ### Evaluasi
   Ketika mengevaluasi model, memerlukan lebih banyak work karena perlu memetakkan prediksi model untuk kembali ke konteks. Model tersebut mempredikasi posisi jawaban awal dan akhir. Output dari model yaitu loss, logits awal, dan logits akhir. Disinis kami tidak membutuhkan loss. 
