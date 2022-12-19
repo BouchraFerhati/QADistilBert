@@ -25,8 +25,6 @@ Gambar di atas merupakan tampilan aplikasi QA-U2U. Untuk menjalankannya, pertama
 Dataset yang digunakan adalah dataset SQUAD (The Stanford Question Answering Dataset) dimana isinya berupa kumpulan pasangan tanya jawab yang berasal dari artikel Wikipedia. Di SQuAD, jawaban pertanyaan yang benar dapat berupa urutan token apapun dalam teks yang diberikan.
 
 
-### Algoritma Distill Bert
-
 
 ### Preprocessing
 
