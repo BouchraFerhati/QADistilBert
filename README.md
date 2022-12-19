@@ -34,6 +34,27 @@ Dataset yang digunakan adalah dataset SQUAD (The Stanford Question Answering Dat
 Dataset squad ini terdiri dari 2 versi yaitu versi 1.1 dan versi 2.0. Dimana pada versi 1.1 terdiri dari 100.000 pertanyaan dan jawaban, sedangkan versi 2.0 terdiri 50.000 dari pasangan pertanyaan dan jawaban. 50.000 pasangan pertanyaan dan jawaban ini terdiri dari beberapa jawaban benar dan beberapa pertanyaan yang memang tidak dapat dijawab. Pada  SQuAD, jawaban pertanyaan yang benar dapat berupa urutan token apapun dalam teks yang diberikan. 
 
 
+### Algoritma DistilBERT
+
+DistilBERT adalah model Transformer kecil, cepat, murah dan ringan yang dilatih dengan menyuling basis BERT. Ini memiliki parameter 40% lebih sedikit daripada bert-base-uncased, berjalan 60% lebih cepat sambil mempertahankan lebih dari 95% kinerja BERT sebagaimana diukur pada tolok ukur pemahaman bahasa GLUE.
+
+DistilBERT menggunakan teknik yang disebut distilasi. Berikut merupakan perbedaan cara kerja DistilBERT dengan BERT.
+
+![image](https://user-images.githubusercontent.com/74850037/208335534-6e09bf06-7de4-400f-9444-54715f917ddb.png)
+Sumber: https://towardsdatascience.com/distillation-of-bert-like-models-the-theory-32e19a02641f
+
+BERT dibangun berdasarkan urutan attention layers yang ditumpuk satu sama lain, yang berarti bahwa pengetahuan tersembunyi yang dipelajari BERT terkandung pada layer-layer tersebut. 
+
+Dari satu BERT ke BERT lainnya, jumlah N lapisan bervariasi, tetapi tentu saja ukuran model sebanding dengan N. Oleh karena itu, waktu yang dibutuhkan untuk melatih model dan durasi lintasan maju juga bergantung pada N, bersama dengan memori diambil untuk menyimpan model. Kesimpulan untuk menyaring BERT adalah untuk mengurangi N.
+
+Sedangkan pendekatan DistilBERT adalah setengah dari jumlah layer, dan untuk menginisialisasi layer "student" dari layer "teacher". Berikut merupakan gambarannya
+
+![image](https://user-images.githubusercontent.com/74850037/208335624-7c95d86c-29a9-4f03-ae4b-a45c3417748a.png)
+Sumber: https://towardsdatascience.com/distillation-of-bert-like-models-the-theory-32e19a02641f
+
+DistilBERT bekerja dengan bergantian antara satu layer yang disalin dan satu layer yang diabaikan dengan mencoba menyalin lapisan atas atau bawah sebagai prioritas.
+
+
 ### Preprocessing
 
 Sebelum teks dimasukan pada model, maka dilakukan preprocessing terlebih dahulu dengan `tokenizer`,  dimana tokenizer ini nanti akan mentokenisasi input dan akan menempatkannya pada format yang di expect oleh model kita. Dibuat instance untuk tokenizernya dengan `AutoTokenizer` untuk memastikan bahwa tokenizernya sesuai dengan model yang dipakai dan sudah download vocab yang dipakai saat pretrain.
