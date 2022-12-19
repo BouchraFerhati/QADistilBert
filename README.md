@@ -22,8 +22,9 @@ Gambar di atas merupakan tampilan aplikasi QA-U2U. Untuk menjalankannya, pertama
 
 ### Dataset
 
-Dataset yang digunakan adalah dataset SQUAD (The Stanford Question Answering Dataset) dimana isinya berupa kumpulan pasangan tanya jawab yang berasal dari artikel Wikipedia. Di SQuAD, jawaban pertanyaan yang benar dapat berupa urutan token apapun dalam teks yang diberikan.
+Dataset yang digunakan adalah dataset SQUAD (The Stanford Question Answering Dataset) dimana isinya berupa kumpulan pasangan pertanyaan dan jawaban yang berasal dari artikel Wikipedia. Tujuan dari sistem yang dilatih pada kumpulan data ini adalah untuk dapat menjawab pertanyaan tentang konten di artikel Wikipedia.
 
+Dataset squad ini terdiri dari 2 versi yaitu versi 1.1 dan versi 2.0. Dimana pada versi 1.1 terdiri dari 100.000 pertanyaan dan jawaban, sedangkan versi 2.0 terdiri 50.000 dari pasangan pertanyaan dan jawaban. 50.000 pasangan pertanyaan dan jawaban ini terdiri dari beberapa jawaban benar dan beberapa pertanyaan yang memang tidak dapat dijawab. Pada  SQuAD, jawaban pertanyaan yang benar dapat berupa urutan token apapun dalam teks yang diberikan. 
 
 
 ### Preprocessing
