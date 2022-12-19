@@ -4,6 +4,13 @@
 
 Aplikasi QA-U2U merupakan aplikasi question answering.  Aplikasi QA-U2U adalah aplikasi yang memungkinkan  pengguna untuk mendapatkan jawaban dari pertanyaan yang diajukan mengenai teks yang telah diinputkan. Jadi ketika menginputkan pertanyaan yang tidak ada pada context, maka aplikasi akan memberikan jawaban random sesuai dengan context yang diberikan. 
 
+## Arsitektur Aplikasi
+Front end dan back end kami disini menggunakan satu library streamlit yang mencakup kedua proses tersebut dengan bahasa pemrograman python.
+
+  Front end dari aplikasi kami ini menggunakan bahasa pemrograman python, alur dari QA-U2U adalah, user dapat memilih dan memasukan beberapa paragraf dokumen, kemudian memberi satu buah pertanyaan dan QA-U2U akan dapat menampilkan jawaban yang sekiranya sesuai.
+  Sebelum text dimasukan, dilakukan preprocessing terlebih dahulu dengan tokenizer untuk dapat mentokenisasikan input yang diberikan. Setelah preprocessing maka dilakukan training model dengan mendownload pretrained model dan mengaplikasikan fine-tune.
+  Back end aplikasi kami ini menggunakan library python streamlit dan transformers dengan membawa model dari pipeline sebagai parameter dengan nama model yang sudah ditentukan oleh hugging face pada akun kita, ini semua kemudian dimasukan ke load model.
+
 
 ## Cara Menjalankan Aplikasi
 Berikut langkah-langkah untuk menjalankan aplikasi: 
