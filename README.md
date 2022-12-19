@@ -47,8 +47,12 @@ Selain itu disini juga kita menetapkan evaluasi akan dilakukan di akhir setiap e
 
 ![image](https://user-images.githubusercontent.com/74850037/208308273-0ea68924-6bf6-4463-afb9-afa0bbe1ce20.png)
 
+
+### Testing
+Pada proses testing digunakan untuk mengetes model yang sebelumnya sudah di training. Pada aplikasi ini untuk testing menggunakan validation sets yang diambil menggunakan fungsi load_dataset. 
+
 ### Evaluasi
-  Ketika mengevaluasi model, memerlukan lebih banyak word karena perlu memetakka prediksi model untuk kembali ke konteks. Model tersebut mempredikasi posisi jawaban awal dan akhir. Output dari model yaitu loss, logits awal dan akhir. Disinis kami tidak membutuhkan loss. 
+  Ketika mengevaluasi model, memerlukan lebih banyak work karena perlu memetakkan prediksi model untuk kembali ke konteks. Model tersebut mempredikasi posisi jawaban awal dan akhir. Output dari model yaitu loss, logits awal, dan logits akhir. Disinis kami tidak membutuhkan loss. 
   Terdapat satu logits untuk setiap fitur dan setiap token. Untuk memprediksi jawaban pada setiap fitur dilakukan dengan mengambil indeks maksimum logits awal sebagai posisi awal dan indeks maksimum logits akhir sebagai posisi akhir
   Untuk mengklasifikasikan jawaban, menggunakan skor yang diperoleh dengan menambahkan logits awal dan akhir. Indeks terbaik di logits awal dan akhir akan dipilih dan mengumpulkan semua jawaban yang diprediksi. Setelah itu, semua jawaban akan diurutkan berdasarkan skornya
   Untuk mempredikasi impossible answer ketika skornya lebih besar dari best non-impossible answer sehingga memberikan post-processing function kita bisa membuat load matric dari datasets library
